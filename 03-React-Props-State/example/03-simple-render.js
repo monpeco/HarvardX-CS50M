@@ -1,13 +1,13 @@
 import React from "react";
 import { render } from "react-dom";
 
-const App = () => {
+const App = (props) => {
   return (
     <div>
-      <h2>Hello</h2>
+      <h2>Hello {props.count}</h2>
       <p>Start editing ...</p>
     </div>
-  );
-};
+  )
+}
 
-render(<App />, document.getElementById("root"));
+render(<App count={4}/>, document.getElementById("root"));
